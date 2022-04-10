@@ -1,5 +1,8 @@
 package com.example.gamewebview.presentation.fragments
 
+import android.content.res.Configuration
+import android.graphics.Bitmap
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -54,6 +57,7 @@ class GameFragment : Fragment(), GameAdapter.ClickItem {
         super.onViewCreated(view, savedInstanceState)
         DaggerApplicationsComponent.create().inject(this)
         startAdapter()
+        //указываю в зависиомсти от уровня, в какой ячейке может быть приз
         winPosition = if (viewModel.hardLevel) {
             (0..5).random()
         } else {
@@ -67,11 +71,25 @@ class GameFragment : Fragment(), GameAdapter.ClickItem {
     private fun startAdapter() {
         adapter = GameAdapter(this)
         binding.rcView.adapter = adapter
-        binding.rcView.layoutManager = GridLayoutManager(requireActivity(), 2)
+        setGridLayoutManager()
         if (viewModel.hardLevel){
             adapter.listGame.addAll(startGameHardLevel)
         } else adapter.listGame.addAll(startGameNormalLevel)
     }
+
+    /**
+     * Указываю вместимость GridLayout в зависимости от ориентации и сложности уровня
+     */
+    private fun setGridLayoutManager(){
+        if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT){
+            binding.rcView.layoutManager = GridLayoutManager(requireActivity(), 2)
+        } else {
+            if (viewModel.hardLevel){
+                binding.rcView.layoutManager = GridLayoutManager(requireActivity(), 3)
+            } else binding.rcView.layoutManager = GridLayoutManager(requireActivity(), 4)
+        }
+    }
+
 
     /**
      * Реализация интерфейса, для кликов по ячейкам в recyclerView
