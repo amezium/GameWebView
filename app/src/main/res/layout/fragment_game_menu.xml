@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fbe7"
+    tools:context=".presentation.fragments.GameMenuFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/bochka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btGame"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#836fa9"
+        android:text="@string/game"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btRecord"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#836fa9"
+        android:text="@string/record"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btGame"
+        app:layout_constraintStart_toStartOf="@+id/btGame"
+        app:layout_constraintTop_toBottomOf="@+id/btGame" />
+
+    <Button
+        android:id="@+id/btSetting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#836fa9"
+        android:text="@string/setting"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btRecord"
+        app:layout_constraintStart_toStartOf="@+id/btRecord"
+        app:layout_constraintTop_toBottomOf="@+id/btRecord" />
+
+    <Button
+        android:id="@+id/btInstructions"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#836fa9"
+        android:text="@string/instructions"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btRecord"
+        app:layout_constraintStart_toStartOf="@+id/btRecord"
+        app:layout_constraintTop_toBottomOf="@+id/btSetting" />
+
+    <Button
+        android:id="@+id/btWebView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#836fa9"
+        android:text="@string/web_view"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btSetting"
+        app:layout_constraintStart_toStartOf="@+id/btSetting"
+        app:layout_constraintTop_toBottomOf="@+id/btInstructions" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btWebView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
