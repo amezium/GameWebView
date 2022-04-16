@@ -7,19 +7,17 @@
 
     <fragment
         android:id="@+id/loadFragment"
-        android:name="com.example.gamewebview.presentation.fragments.LoadFragment"
+        android:name="com.lucki.hamur.presentation.fragments.LoadFragment"
         android:label="fragment_load"
         tools:layout="@layout/fragment_load">
         <action
             android:id="@+id/action_loadFragment_to_gameMenuFragment"
-            app:popUpTo="@id/loadFragment"
-            app:destination="@id/gameMenuFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/gameMenuFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/gameMenuFragment"
-        android:name="com.example.gamewebview.presentation.fragments.GameMenuFragment"
+        android:name="com.lucki.hamur.presentation.fragments.GameMenuFragment"
         android:label="fragment_game_menu"
         tools:layout="@layout/fragment_game_menu" >
         <action
@@ -38,7 +36,7 @@
 
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.example.gamewebview.presentation.fragments.GameFragment"
+        android:name="com.lucki.hamur.presentation.fragments.GameFragment"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" >
         <action
@@ -50,7 +48,7 @@
 
     <fragment
         android:id="@+id/recordFragment"
-        android:name="com.example.gamewebview.presentation.fragments.RecordFragment"
+        android:name="com.lucki.hamur.presentation.fragments.RecordFragment"
         android:label="fragment_record"
         tools:layout="@layout/fragment_record" >
         <action
@@ -62,7 +60,7 @@
 
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.example.gamewebview.presentation.fragments.SettingFragment"
+        android:name="com.lucki.hamur.presentation.fragments.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" >
         <action
@@ -74,7 +72,7 @@
 
     <fragment
         android:id="@+id/instructionsFragment"
-        android:name="com.example.gamewebview.presentation.fragments.InstructionsFragment"
+        android:name="com.lucki.hamur.presentation.fragments.InstructionsFragment"
         android:label="fragment_instructions"
         tools:layout="@layout/fragment_instructions" >
         <action
