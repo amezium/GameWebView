@@ -4,64 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f9fbe7"
+    android:background="@drawable/fon2"
     tools:context=".presentation.fragments.GameMenuFragment">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/bochka"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/wt"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btGame"
-        android:layout_width="150dp"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#836fa9"
-        android:text="@string/game"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/btRecord"
-        android:layout_width="150dp"
+        <Button
+            android:id="@+id/btGame"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#cb9ca1"
+            android:drawableEnd="@drawable/start_game"
+            android:text="@string/game"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btRecord"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#cb9ca1"
+            android:drawableEnd="@drawable/record"
+            android:text="@string/record"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:backgroundTint="#836fa9"
-        android:text="@string/record"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    <Button
-        android:id="@+id/btSetting"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#836fa9"
-        android:text="@string/setting"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/btGame"
-        app:layout_constraintStart_toStartOf="@+id/btGame"
-        app:layout_constraintTop_toBottomOf="@+id/btGame" />
+        <Button
+            android:id="@+id/btInstructions"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#cb9ca1"
+            android:drawableEnd="@drawable/instructions"
+            android:text="@string/instructions"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btInstructions"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#836fa9"
-        android:text="@string/instructions"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/btRecord"
-        app:layout_constraintStart_toStartOf="@+id/btRecord"
-        app:layout_constraintTop_toBottomOf="@+id/btRecord" />
-
+        <Button
+            android:id="@+id/btSetting"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="#cb9ca1"
+            android:drawableEnd="@drawable/settings"
+            android:text="@string/setting"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -72,12 +102,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

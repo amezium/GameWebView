@@ -83,6 +83,7 @@ class LoadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         DaggerApplicationsComponent.create().inject(this)
+
         //проверяю, если включен интернет, запускаю всю логику, если нет, сообщаю что нужно включить
         if (checkForInternet(requireActivity())){
             startWork()
@@ -90,6 +91,7 @@ class LoadFragment : Fragment() {
             Toast.makeText(requireActivity(),"Need to turn on internet", Toast.LENGTH_LONG).show()
         }
     }
+
 
     /**
      * Проверяю включен ли интернет

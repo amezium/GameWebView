@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Lucky Hammer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="game">Game</string>
     <string name="setting">Setting</string>
     <string name="record">Record</string>
+    <string name="game">Start</string>
     <string name="web_view">Web View</string>
     <string name="exit">Exit</string>
     <string name="repeat">Repeat</string>

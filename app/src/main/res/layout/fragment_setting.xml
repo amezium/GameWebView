@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fon1"
     tools:context=".presentation.fragments.SettingFragment">
 
     <Button
@@ -11,8 +12,11 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:backgroundTint="#836fa9"
+        android:backgroundTint="#cb9ca1"
         android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/level_normal"
-            android:textColor="#836fa9"
+            android:textColor="#cb9ca1"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -44,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/level_hard"
-            android:textColor="#836fa9"
+            android:textColor="#cb9ca1"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RadioGroup>
@@ -53,7 +57,7 @@
         android:id="@+id/imageView6"
         android:layout_width="0dp"
         android:layout_height="330dp"
-        android:src="@drawable/strong"
+        android:src="@drawable/settings_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,7 +69,7 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="@string/level"
-        android:textColor="#836fa9"
+        android:textColor="#cb9ca1"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

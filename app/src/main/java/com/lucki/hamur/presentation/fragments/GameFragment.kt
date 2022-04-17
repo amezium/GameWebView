@@ -29,13 +29,11 @@ class GameFragment : Fragment(), GameAdapter.ClickItem {
 
 
     private var startGameHardLevel = listOf(
-        R.drawable.question, R.drawable.question, R.drawable.question,
-        R.drawable.question, R.drawable.question, R.drawable.question
+        R.drawable.slot_a, R.drawable.slot_j, R.drawable.slot_k,
+        R.drawable.slot_q, R.drawable.slot_a, R.drawable.slot_j
     )
     private var startGameNormalLevel = listOf(
-        R.drawable.question, R.drawable.question, R.drawable.question,
-        R.drawable.question
-    )
+        R.drawable.slot_a, R.drawable.slot_j, R.drawable.slot_k, R.drawable.slot_q)
     private var winPosition = 0
     private var countClick = 3
     private var countRound = 1
@@ -100,7 +98,7 @@ class GameFragment : Fragment(), GameAdapter.ClickItem {
                 binding.tvAttempts.text = countClick.toString()
                 adapter.listGame.removeAt(position)
                 adapter.notifyItemChanged(position)
-                adapter.listGame.add(position, R.drawable.sunduk)
+                adapter.listGame.add(position, R.drawable.win)
                 gameContinues = false
                 if (countRound == 3) gameOver() //В конце игры предлагаю начать заново или вернуться в меню
                 nextRound() //показываю текст о следующем раунде
@@ -108,7 +106,7 @@ class GameFragment : Fragment(), GameAdapter.ClickItem {
                 countClick--
                 binding.tvAttempts.text = countClick.toString()
                 adapter.listGame.removeAt(position)
-                adapter.listGame.add(position, R.drawable.smail)
+                adapter.listGame.add(position, R.drawable.past)
                 adapter.notifyItemChanged(position)
             }
         }

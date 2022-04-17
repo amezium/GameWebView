@@ -3,12 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v23/settings.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v24/ic_one.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v24/ic_three.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable-v24/ic_two.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/ic_one.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/ic_three.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/ic_two.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/instructions.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/record.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/settings.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/drawable/start_game.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout-land/fragment_game_menu.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout-land/fragment_instructions.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout-land/fragment_load.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout-land/fragment_record.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout-land/fragment_setting.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout/activity_2.xml" value="0.25416666666666665" />
@@ -25,6 +36,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout/fragment_web_view.xml" value="0.29683698296836986" />
         <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/layout/game_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/GameWebView/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e8eaf6"
+    android:background="@drawable/fon1"
     tools:context=".presentation.fragments.GameFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -24,8 +24,11 @@
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#836fa9"
+        android:backgroundTint="#cb9ca1"
         android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/cardViewId"
         app:layout_constraintTop_toBottomOf="@+id/cardViewId" />
@@ -35,8 +38,11 @@
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#836fa9"
+        android:backgroundTint="#cb9ca1"
         android:text="@string/repeat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="@+id/cardViewId"
         app:layout_constraintTop_toBottomOf="@+id/cardViewId" />
@@ -70,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="#836fa9"
+                android:textColor="#795548"
                 android:textSize="20sp"
                 android:visibility="gone" />
 
@@ -79,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="#836fa9"
+                android:textColor="#795548"
                 android:textSize="20sp"
                 android:visibility="gone" />
 
@@ -87,9 +93,12 @@
                 android:id="@+id/btNextRound"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#836fa9"
+                android:backgroundTint="#cb9ca1"
                 android:text="@string/nextRound"
                 android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:visibility="gone" />
         </LinearLayout>
 
@@ -101,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/attempts"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.42"
@@ -115,7 +124,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:text="@string/round"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/tvRound"
         app:layout_constraintTop_toTopOf="parent" />
@@ -126,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="3"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -139,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:text="1"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -153,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="@string/coins"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/tvCoins"
         app:layout_constraintStart_toEndOf="@+id/tvAttempts"
@@ -166,7 +175,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:text="0"
-        android:textColor="#836fa9"
+        android:textColor="#795548"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView7"
