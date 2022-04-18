@@ -208,7 +208,7 @@ class LoadFragment : Fragment() {
         mainLink = cloacaLink + "media_source=$mediaSource" + "&google_adid=$googleId" +
                 "&af_userid=$appsFlyerUserId" + "&bundle=$bundle" + "&fb_at=$facebookToken" +
                 "&dev_key=$appsDevKey" + "&app_id=$facebookAppId" + "&media_source=$mediaSource" +
-                "&af_status=$afStatus" + "&af_channel=$afChannel" + "&campaign=$campaign"
+                "&af_status=$afStatus" + "&af_channel=$afChannel" + "&campaign=$campaign" +
                 "&is_first_launch=$isFirstLaunch" + "&sub1=${subAll[0]}" + "&sub2=${subAll[1]}" +
                 "&sub3=${subAll[2]}" + "&sub4=${subAll[3]}"
     }
@@ -233,9 +233,8 @@ class LoadFragment : Fragment() {
      * Открываю или игру или вебвью
      */
     private fun nextScreen() {
-        Log.d("test8", "1")
         collectingLink() //формирую ссылку
-        if (isDef && afStatus != "Organic" || afStatus == null || subAll[1] == null)   {
+        if (afStatus == null || !isDef && afStatus == "Organic" )  {
             findNavController().navigate(R.id.action_loadFragment_to_gameMenuFragment)
         }
         if (isDef && afStatus == "Organic" || subAll[1] != null) {
